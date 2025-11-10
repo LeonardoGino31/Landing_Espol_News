@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>University News</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#F97316",
+                        "background-light": "#F3F4F6",
+                        "background-dark": "#1F2937",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F3F4F6",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2d3748"
+                    },
+                    fontFamily: {
+                        display: ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .group:hover .group-hover\:block { display: block; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 py-4">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h2 class="text-xl font-bold leading-tight tracking-tighter">University News</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Talks</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Fairs</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Hackathons</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Workshops</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Scholarships</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">Subscribe</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+<!-- HeroSection -->
+<div class="@container">
+<div class="flex flex-col gap-8 lg:flex-row lg:items-center bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg">
+<div class="flex flex-col gap-6 lg:w-1/2">
+<div class="flex flex-col gap-3 text-left">
+<h1 class="text-4xl font-black leading-tight tracking-tighter sm:text-5xl text-text-light dark:text-text-dark">
+                                        Discover Your Next Opportunity
+                                    </h1>
+<p class="text-base font-normal leading-normal text-gray-600 dark:text-gray-300 sm:text-lg">
+                                        Stay informed about the latest events, workshops, and scholarships happening on campus. Your journey to success starts here.
+                                    </p>
+</div>
+<button class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">See Latest Events</span>
+</button>
+</div>
+<div class="w-full lg:w-1/2 bg-center bg-no-repeat aspect-video bg-cover rounded-lg min-h-[250px]" data-alt="Students collaborating on a project in a modern university library." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc6AUZTQKzHHRrDUUOoWymed-Er3Bz_9gNrFlX99YmXH209G3aQZvG3lXzBCjs8jVJz_UFPWJAbO5cDX0oCwLX_dl9ya_2vztbe5n-P9idohjaocixZhLwT19xJyWXIwv9Dq7kWtiRVoHxu2Gg0Z2j8OMzqmx6qhuzMOwu3-i1RVFRTBEbnJ9zl5kPNR8gM1VtFRoHzqdD56P0t0TP1mxjpYt8127DkA-bAWSUe36dMBKTdFIS7UZYhbronGOCWct_dFt0BCAfyQ");'></div>
+</div>
+</div>
+<!-- Featured Section -->
+<div class="mt-16 md:mt-24">
+<!-- SectionHeader -->
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-tighter px-4 pb-4">Latest Events &amp; Opportunities</h2>
+<!-- Chips -->
+<div class="flex gap-3 p-3 flex-wrap items-center">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mr-2">Explore by Category:</p>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 px-4 text-primary dark:text-blue-300 text-sm font-medium hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Talks</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Fairs</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Hackathons</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Workshops</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/20 dark:bg-secondary/30 px-4 text-secondary dark:text-orange-300 text-sm font-medium hover:bg-secondary/30 dark:hover:bg-secondary/40 transition-colors">Scholarships</button>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 p-4">
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A large hall filled with booths and students for a tech fair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAANgRNYw5QL0CILLMVdjCYXE1QnOedVubE1C4kkzn0dSCKJvIsXsmG00IXqDWoYuRMmjb6hlIRpoWghJyZw24rlUmyMlEogRYU2D-fn0t6O_f2jI55P0jffzdtm6VMlH7TmYdu8wWFWE3Gpw_RGNGoZJKwZ5HywW0YcwxWG3PGKVyTcu-FnPvZx1SPJnM4euKBO2Zh6cTZQ6qpnZxmXjMp_gsbJYMflLA6MXSiANH2b78x32BwaTNLxucIu1-JOevGAlDvBbNdNA");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-300 text-xs font-semibold px-2 py-1 rounded-full mb-2">Fair</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Annual Tech Fair</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Meet top tech companies and explore internship opportunities. October 25th.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A person presenting in front of an audience about AI." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVBDbDgY1LZrVlMhw9Xur-1asVbder1mMsh1DrajHkLzy9vn1GHnxuDbhrsnGFN5qX5YsQqZnrpMr7OQ8JI2jmc7cndPpgRFQPGGR4rXwgPHJ5zgTpUd3fYN8Nt2k7kiT22DajuoIqemyBpYnDLGvwFwPNue1Dpdu_-uvRjHaQ1ZSWs10zlNq6y6ETxg6UPxHAdrR1BF6b2KiY19SEz7qj4zGAiGmTGeK_X_9A5b3Axazsvg0FLpxtw8afCuXM8-KHvGA0Rg33fw");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Workshop</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">AI Ethics Workshop</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Join the discussion on the future of artificial intelligence. November 2nd.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Graduation caps being thrown in the air." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAapsbWNKTQQ-LL9jiihiVvaW2gQFD4iwcDTsnj6D79eHGaJm2kI0VxS_GYUPRpAvJbHw9FfcWrVKqdxtdMBp0Wdm2jfjOhNpL1r92CuaoEE5KlzlzUvs5-w7-4zCh1NLGn9Pfz0LYsUf6XuwqxrShvPCVn_uJ79twjw2z8scoZfOcA4MErWdLhA5VdcFUJjQQ7pANT1obMNU3BY-vdP_mn7DHQe9U-Lnmd_IX8xNLh0jv4MGaJXNwLboJ6AfaUXoR_mC6qO-8_4w");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-orange-100 dark:bg-orange-900/50 text-secondary dark:text-orange-300 text-xs font-semibold px-2 py-1 rounded-full mb-2">Scholarship</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">International Study Scholarship</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Application deadline is approaching for Spring semester. November 10th.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A person pitching an idea to a panel of judges." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-9rNm_Oc9WABCR2HFjTUfRTIYtQGW-mFQFEUe-DoOy0Hnva2rZ1PZSm8BOv7m4nR76KYN7z7RRZbWs5NBEMdWuPu2PmHVnQWya35bL8zY-_7zvoyH3Q_0lu6AboOHakAceZKA-9gKdqbd9tCCv2up2EWwOxXbg_70GzwR1k0cflgeYGd7EXnu6ieo_xebz2Aiel_PlJp05-75FN_4GTgT_nsQgpOT8E7cDu71sxSKMXQVVN0yKL5ir3ta05CeU16kjtcECdzpQ");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Talk</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Startup Pitch Night</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Present your innovative ideas to a panel of investors. November 15th.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A group of students working on laptops in a collaborative space." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoYdLSrKX9wJF96iHBsKmrk_GRyHsNZ-A27uen_cAfXOBpD4dXcWzdLmJbo-fOxyCPdXebioqh-I0dMTqqroejnXoM8XY7wTXy68X6DlcDm-iwOaCv-qbeXHoisFTaPS6G963XioI31Cj3zrfAx093MgpnIqCb8k7FLn6bHfDWaD1Y6Tm05q4RBd-gabaGlzOtVhR8lv79mDS4raAaA8apuLjDXATas1P-4CeESQsMtvPsOJpHIFpunNHAFpf4GmLneH3dUFdbjA");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Hackathon</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Data Science Hackathon</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Team up and build something amazing in 48 hours. November 18-20th.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A professional giving a seminar on career development." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgBS0MDnp-ioAbqaoKiQwbHkhuBZxKnyFxQ1BEzmLZZZDg7XmmWFpct0oxcl5ZUTXpmXXW9HRnjmbxavlWyuu_gstBgaX6eLstZ1I_GWF6Hml2lJtMGoBA9fSuAhKqRD2pilqhPPYz2p4VU7Nw0wfVxPPFvqOHTFYtmVUSh-vVel9Jfgj-6pb8NCFmeoPdJ1YDS4mqaRXv93bEOIjyygmeKlUGZWGfrLac60f6HT56vBa_lz27fEDKkbwMQxZenZoGUxtwla2msw");'></div>
+<div class="p-4 pt-0">
+<span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Workshop</span>
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Career Development Seminar</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Learn how to build a resume that stands out. November 22nd.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Newsletter Subscription Form -->
+<div class="mt-16 md:mt-24 bg-primary/10 dark:bg-primary/20 p-8 md:p-12 rounded-xl text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">mail</span>
+<h3 class="text-3xl font-bold tracking-tighter text-text-light dark:text-text-dark">Never Miss an Update</h3>
+<p class="text-gray-600 dark:text-gray-300 mt-2 mb-6 max-w-xl mx-auto">Get the latest news, events, and scholarship opportunities delivered directly to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow w-full h-12 px-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-card-light dark:bg-card-dark focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email" required="" type="email"/>
+<button class="flex items-center justify-center h-12 px-6 bg-secondary text-white font-bold rounded-lg hover:bg-secondary/90 transition-colors" type="submit">
+<span class="truncate">Subscribe Now</span>
+</button>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-card-light dark:bg-card-dark border-t border-gray-200 dark:border-gray-700 mt-16">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">school</span>
+<p class="text-sm font-medium text-gray-600 dark:text-gray-400">© 2024 University News. All Rights Reserved.</p>
+</div>
+<div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
+<a class="text-sm hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
+<a aria-label="Facebook" class="hover:text-primary transition-colors" href="#">
+<!-- Facebook Icon SVG -->
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Twitter" class="hover:text-primary transition-colors" href="#">
+<!-- Twitter Icon SVG -->
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a aria-label="Instagram" class="hover:text-primary transition-colors" href="#">
+<!-- Instagram Icon SVG -->
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.162 4.908a.375.375 0 10-1.02-1.02.375.375 0 001.02 1.02zM12 6.875A5.125 5.125 0 1012 17.125 5.125 5.125 0 0012 6.875zm0 8.625a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
