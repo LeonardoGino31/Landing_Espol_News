@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>University News</title>
+    <title>Espol News</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -59,7 +59,7 @@
                             <span class="material-symbols-outlined text-primary text-3xl">school</span>
                             <h2 class="text-xl font-bold leading-tight tracking-tighter">Espol News</h2>
                         </div>
-                        <nav class="hidden md:flex items-center gap-6">
+                        <nav class="hidden md:flex items-center gap-6 m-4">
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
                                 href="#">Conferencias</a>
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
@@ -69,7 +69,7 @@
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
                                 href="#">Talleres</a>
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Oportunidades escolares</a>
+                                href="#">Oportunidades</a>
                         </nav>
                         <div class="flex items-center gap-4">
                             <button
@@ -83,7 +83,7 @@
             <main class="flex-1 dark:bg-gray-700">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
                     <!-- HeroSection -->
-                    <div class="@container">
+                    <section class="@container" id="Nosotros">
                         <div
                             class="flex flex-col gap-8 lg:flex-row lg:items-center bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg">
                             <div class="flex flex-col gap-6 lg:w-1/2">
@@ -94,12 +94,14 @@
                                     </h1>
                                     <p
                                         class="text-base font-normal leading-normal text-gray-600 dark:text-gray-300 sm:text-lg">
-                                        Mantente al tanto de los últimos eventos, talleres y becas que se ofrecen en el campus.
+                                        Mantente al tanto de los últimos eventos, talleres y becas que se ofrecen en el
+                                        campus.
                                         Tu camino al éxito comienza aquí.
                                     </p>
                                 </div>
                                 <button
-                                    class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+                                    class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors"
+                                    href="ultimosEventos">
                                     <span class="truncate">Ver los últimos eventos</span>
                                 </button>
                             </div>
@@ -108,9 +110,50 @@
                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc6AUZTQKzHHRrDUUOoWymed-Er3Bz_9gNrFlX99YmXH209G3aQZvG3lXzBCjs8jVJz_UFPWJAbO5cDX0oCwLX_dl9ya_2vztbe5n-P9idohjaocixZhLwT19xJyWXIwv9Dq7kWtiRVoHxu2Gg0Z2j8OMzqmx6qhuzMOwu3-i1RVFRTBEbnJ9zl5kPNR8gM1VtFRoHzqdD56P0t0TP1mxjpYt8127DkA-bAWSUe36dMBKTdFIS7UZYhbronGOCWct_dFt0BCAfyQ");'>
                             </div>
                         </div>
+                    </section>
+                    <!-- Prueba de toast -->
+                    <div id="toast-interactive"
+                        class="hidden fixed right-5 bottom-5 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800"
+                        role="alert">
+                        <div class="flex">
+
+                            <!-- Content -->
+                            <div class="ms-3 text-sm font-normal">
+                                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Suscríbete
+                                    ahora</span>
+                                <div class="mb-2">Suscríbete para estar siempre al día.
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div>
+                                        <a href="#Subscripcion"
+                                            class="inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">Sí,
+                                            quiero</a>
+                                    </div>
+                                    <div id="toastReject">
+                                        <a href="#"
+                                            class="inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                                            
+                                            >No ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Close button -->
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 p-1.5 inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-white rounded-lg hover:text-gray-900 hover:bg-gray-100 focus:ring-2 focus:ring-gray-300 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-interactive" aria-label="Close" id="toastClose">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                                    aria-hidden="true">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
+
                     <!-- Featured Section -->
-                    <div class="mt-16 md:mt-24">
+                    <section class="mt-16 md:mt-24" id="ultimosEventos">
                         <!-- SectionHeader -->
                         <h2
                             class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-tighter px-4 pb-4">
@@ -223,17 +266,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+
                     <!-- Newsletter Subscription Form -->
-                    <div class="mt-16 md:mt-24 bg-primary/10 dark:bg-primary/20 p-8 md:p-12 rounded-xl text-center">
+                    <section class="mt-16 md:mt-24 bg-primary/10 dark:bg-primary/20 p-8 md:p-12 rounded-xl text-center" id="Subscripcion">
                         <span class="material-symbols-outlined text-primary text-5xl mb-4">mail</span>
-                        <h3 class="text-3xl font-bold tracking-tighter text-text-light dark:text-text-dark">No te pierdas
+                        <h3 class="text-3xl font-bold tracking-tighter text-text-light dark:text-text-dark">No te
+                            pierdas
                             ninguna actualización</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2 mb-6 max-w-xl mx-auto">Reciba las últimas noticias,
-                        eventos y oportunidades de becas directamente en su bandeja de entrada.</p>
+                        <p class="text-gray-600 dark:text-gray-300 mt-2 mb-6 max-w-xl mx-auto">Reciba las últimas
+                            noticias,
+                            eventos y oportunidades de becas directamente en su bandeja de entrada.</p>
                         <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
                             <input
-                                class="flex-grow w-full h-12 px-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-card-light dark:bg-card-dark focus:ring-2 focus:ring-primary focus:border-transparent"
+                                class="flex-grow w-full h-12 px-4 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light focus:ring-2 focus:ring-primary focus:border-transparent"
                                 placeholder="Ingresa tu email" required="" type="email" />
                             <button
                                 class="flex items-center justify-center h-12 px-6 bg-secondary text-white font-bold rounded-lg hover:bg-secondary/90 transition-colors"
@@ -241,7 +287,50 @@
                                 <span class="truncate">Suscríbete ahora</span>
                             </button>
                         </form>
-                    </div>
+                    </section>
+                    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+                        <div
+                            class="flex flex-col gap-8 lg:flex-row lg:items-center bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg">
+                            <div class="lg:mx-autoflex flex-col gap-4">
+                                <h2 id="Contacto"
+                                    class="text-4xl font-black leading-tight tracking-tighter sm:text-5xl text-text-light dark:text-text-dark text-center">
+                                    Contactanos</h2>
+                                <p
+                                    class="mb-8 lg:mb-16 font-light text-left text-gray-500 dark:text-gray-400 sm:text-xl m-4">
+                                    ¿Tienes algún problema técnico? ¿Quieres enviarnos tus comentarios sobre alguna
+                                    sección en particular? ¿Necesitas más información sobre alguna sección específica?
+                                    Avísanos.</p>
+                                <form action="#" class="space-y-8">
+                                    <div>
+                                        <label for="email"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Email</label>
+                                        <input type="email" id="email"
+                                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                            placeholder="name@flowbite.com" required>
+                                    </div>
+                                    <div>
+                                        <label for="subject"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunto</label>
+                                        <input type="text" id="subject"
+                                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                            placeholder="Díganos cómo podemos ayudarle." required>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label for="message"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu
+                                            Mensaje</label>
+                                        <textarea id="message" rows="6"
+                                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="Deja un comentario..."></textarea>
+                                    </div>
+                                    <button
+                                        class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+                                        <span class="truncate">Enviar</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
             <!-- Footer -->
@@ -254,9 +343,9 @@
                                 Rights Reserved.</p>
                         </div>
                         <div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
-                            <a class="text-sm hover:text-primary transition-colors" href="#">Sobre nosotros</a>
+                            <a class="text-sm hover:text-primary transition-colors" href="#Nosotros">Sobre nosotros</a>
                             <a class="text-sm hover:text-primary transition-colors" href="#">Política de privacidad</a>
-                            <a class="text-sm hover:text-primary transition-colors" href="#">Contacto</a>
+                            <a class="text-sm hover:text-primary transition-colors" href="#Contacto">Contacto</a>
                         </div>
                         <div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
                             <a aria-label="Facebook" class="hover:text-primary transition-colors" href="#">
@@ -289,6 +378,7 @@
             </footer>
         </div>
     </div>
+    <script src="/js/file01.js" defer></script>
 </body>
 
 </html>
