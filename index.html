@@ -59,17 +59,13 @@
                             <span class="material-symbols-outlined text-primary text-3xl">school</span>
                             <h2 class="text-xl font-bold leading-tight tracking-tighter">Espol News</h2>
                         </div>
-                        <nav class="hidden md:flex items-center gap-6 m-4">
+                        <nav class="hidden md:flex items-center gap-6 ml-auto mr-4">
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Conferencias</a>
+                                href="#Nosotros">Inicio</a>
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Ferias</a>
+                                href="#Contacto">Contacto</a>
                             <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Hackathons</a>
-                            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Talleres</a>
-                            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
-                                href="#">Oportunidades</a>
+                                href="#ultimosEventos">Eventos</a>
                         </nav>
                         <div class="flex items-center gap-4">
                             <button
@@ -130,7 +126,7 @@
                                             quiero</a>
                                     </div>
                                     <div id="toastReject">
-                                        <a href="#"
+                                        <a 
                                             class="inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
                                             
                                             >No ahora</a>
@@ -163,27 +159,27 @@
                             <p class="text-sm font-medium text-gray-500 dark:text-gray-400 mr-2">Explorar por categoría:
                             </p>
                             <button
-                                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 px-4 text-primary dark:text-blue-300 text-sm font-medium hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Conferencias</button>
+                                class="chip flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-type="conferencias" id="ConferenciasB">Conferencias</button>
                             <button
-                                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Ferias</button>
+                                class="chip flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-type="ferias" id="FeriasB">Ferias</button>
                             <button
-                                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Hackathons</button>
+                                class="chip flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-type="hackathons" id="HackathonsB">Hackathons</button>
                             <button
-                                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Talleres</button>
+                                class="chip flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-type="talleres" id="TalleresB">Talleres</button>
                             <button
-                                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/20 dark:bg-secondary/30 px-4 text-secondary dark:text-orange-300 text-sm font-medium hover:bg-secondary/30 dark:hover:bg-secondary/40 transition-colors">Oportunidades</button>
+                                class="chip flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-type="oportunidades" id="OportunidadesB">Oportunidades</button>
                         </div>
                         <!-- ImageGrid -->
                         <div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 p-4">
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="ferias">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="A large hall filled with booths and students for a tech fair"
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAANgRNYw5QL0CILLMVdjCYXE1QnOedVubE1C4kkzn0dSCKJvIsXsmG00IXqDWoYuRMmjb6hlIRpoWghJyZw24rlUmyMlEogRYU2D-fn0t6O_f2jI55P0jffzdtm6VMlH7TmYdu8wWFWE3Gpw_RGNGoZJKwZ5HywW0YcwxWG3PGKVyTcu-FnPvZx1SPJnM4euKBO2Zh6cTZQ6qpnZxmXjMp_gsbJYMflLA6MXSiANH2b78x32BwaTNLxucIu1-JOevGAlDvBbNdNA");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-300 text-xs font-semibold px-2 py-1 rounded-full mb-2">Fair</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Ferias</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">
                                         Annual Tech Fair</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Meet
@@ -191,14 +187,14 @@
                                 </div>
                             </div>
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="talleres">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="A person presenting in front of an audience about AI."
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVBDbDgY1LZrVlMhw9Xur-1asVbder1mMsh1DrajHkLzy9vn1GHnxuDbhrsnGFN5qX5YsQqZnrpMr7OQ8JI2jmc7cndPpgRFQPGGR4rXwgPHJ5zgTpUd3fYN8Nt2k7kiT22DajuoIqemyBpYnDLGvwFwPNue1Dpdu_-uvRjHaQ1ZSWs10zlNq6y6ETxg6UPxHAdrR1BF6b2KiY19SEz7qj4zGAiGmTGeK_X_9A5b3Axazsvg0FLpxtw8afCuXM8-KHvGA0Rg33fw");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Workshop</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Talleres</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">AI
                                         Ethics Workshop</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Join
@@ -206,14 +202,14 @@
                                 </div>
                             </div>
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="oportunidades">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="Graduation caps being thrown in the air."
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAapsbWNKTQQ-LL9jiihiVvaW2gQFD4iwcDTsnj6D79eHGaJm2kI0VxS_GYUPRpAvJbHw9FfcWrVKqdxtdMBp0Wdm2jfjOhNpL1r92CuaoEE5KlzlzUvs5-w7-4zCh1NLGn9Pfz0LYsUf6XuwqxrShvPCVn_uJ79twjw2z8scoZfOcA4MErWdLhA5VdcFUJjQQ7pANT1obMNU3BY-vdP_mn7DHQe9U-Lnmd_IX8xNLh0jv4MGaJXNwLboJ6AfaUXoR_mC6qO-8_4w");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-orange-100 dark:bg-orange-900/50 text-secondary dark:text-orange-300 text-xs font-semibold px-2 py-1 rounded-full mb-2">Scholarship</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Oportunidades</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">
                                         International Study Scholarship</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">
@@ -221,14 +217,14 @@
                                 </div>
                             </div>
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="conferencias">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="A person pitching an idea to a panel of judges."
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-9rNm_Oc9WABCR2HFjTUfRTIYtQGW-mFQFEUe-DoOy0Hnva2rZ1PZSm8BOv7m4nR76KYN7z7RRZbWs5NBEMdWuPu2PmHVnQWya35bL8zY-_7zvoyH3Q_0lu6AboOHakAceZKA-9gKdqbd9tCCv2up2EWwOxXbg_70GzwR1k0cflgeYGd7EXnu6ieo_xebz2Aiel_PlJp05-75FN_4GTgT_nsQgpOT8E7cDu71sxSKMXQVVN0yKL5ir3ta05CeU16kjtcECdzpQ");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Talk</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Conferencias</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">
                                         Startup Pitch Night</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">
@@ -236,14 +232,14 @@
                                 </div>
                             </div>
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="hackathons">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="A group of students working on laptops in a collaborative space."
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoYdLSrKX9wJF96iHBsKmrk_GRyHsNZ-A27uen_cAfXOBpD4dXcWzdLmJbo-fOxyCPdXebioqh-I0dMTqqroejnXoM8XY7wTXy68X6DlcDm-iwOaCv-qbeXHoisFTaPS6G963XioI31Cj3zrfAx093MgpnIqCb8k7FLn6bHfDWaD1Y6Tm05q4RBd-gabaGlzOtVhR8lv79mDS4raAaA8apuLjDXATas1P-4CeESQsMtvPsOJpHIFpunNHAFpf4GmLneH3dUFdbjA");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Hackathon</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Hackathons</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Data
                                         Science Hackathon</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Team
@@ -251,14 +247,14 @@
                                 </div>
                             </div>
                             <div
-                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                                class="group flex cursor-pointer flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark shadow-md hover:shadow-xl transition-shadow overflow-hidden" data-type="talleres">
                                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
                                     data-alt="A professional giving a seminar on career development."
                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgBS0MDnp-ioAbqaoKiQwbHkhuBZxKnyFxQ1BEzmLZZZDg7XmmWFpct0oxcl5ZUTXpmXXW9HRnjmbxavlWyuu_gstBgaX6eLstZ1I_GWF6Hml2lJtMGoBA9fSuAhKqRD2pilqhPPYz2p4VU7Nw0wfVxPPFvqOHTFYtmVUSh-vVel9Jfgj-6pb8NCFmeoPdJ1YDS4mqaRXv93bEOIjyygmeKlUGZWGfrLac60f6HT56vBa_lz27fEDKkbwMQxZenZoGUxtwla2msw");'>
                                 </div>
                                 <div class="p-4 pt-0">
                                     <span
-                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Workshop</span>
+                                        class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-2 py-1 rounded-full mb-2">Talleres</span>
                                     <p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">
                                         Career Development Seminar</p>
                                     <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Learn
