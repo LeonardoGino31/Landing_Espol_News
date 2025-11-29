@@ -95,11 +95,28 @@
                                         Tu camino al éxito comienza aquí.
                                     </p>
                                 </div>
-                                <button
-                                    class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors"
-                                    href="ultimosEventos">
-                                    <span class="truncate">Ver los últimos eventos</span>
-                                </button>
+                                <div class="flex items-center justify-between w-full lg:w-3/4">
+
+                            
+                                    <button
+                                        class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+                                        <span class="truncate">Ver los últimos eventos</span>
+                                    </button>
+
+                            
+                                    <div class="flex items-center gap-4 bg-primary/10 dark:bg-primary/20 
+                border border-primary/30 dark:border-primary/40 
+                p-4 rounded-lg backdrop-blur-sm">
+                                        <div class="flex flex-col">
+                                            <span class="text-3xl font-extrabold text-primary"
+                                                id="contadorSubs">0</span>
+                                            <span class="text-sm font-medium text-gray-700 dark:text-gray-300 -mt-1">
+                                                Personas Suscritas
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="w-full lg:w-1/2 bg-center bg-no-repeat aspect-video bg-cover rounded-lg min-h-[250px]"
                                 data-alt="Students collaborating on a project in a modern university library."
@@ -346,8 +363,8 @@
                         <p class="text-gray-600 dark:text-gray-300 mt-2 mb-6 max-w-xl mx-auto">Reciba las últimas
                             noticias,
                             eventos y oportunidades de becas directamente en su bandeja de entrada.</p>
-                        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                            <input
+                        <form id="form_email" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                            <input id="email"
                                 class="flex-grow w-full h-12 px-4 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light focus:ring-2 focus:ring-primary focus:border-transparent"
                                 placeholder="Ingresa tu email" required="" type="email" />
                             <button
@@ -356,6 +373,9 @@
                                 <span class="truncate">Suscríbete ahora</span>
                             </button>
                         </form>
+                        <p id="successMessage" class="hidden text-green-600 mt-4 text-center">¡Datos enviados
+                            correctamente!</p>
+                        <p id="repeatMessage" class="hidden text-yellow-600 mt-4 text-center">¡Datos ya registrados!</p>
                     </section>
                     <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
                         <div
@@ -448,6 +468,7 @@
         </div>
     </div>
     <script type="module" src="./js/file01.js" defer></script>
+    <script type="module" src="./js/firebase.js"></script>
 </body>
 
 </html>
